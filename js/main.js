@@ -35,7 +35,7 @@ const fleshUp = (matches) => {
 }
 
 // Search Words List and filter it
-const searchWords = async (input) => {
+const searchWords =  (input) => {
 
     let searchText = input.trim().toLowerCase();
    
