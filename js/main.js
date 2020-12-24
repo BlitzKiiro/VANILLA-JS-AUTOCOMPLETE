@@ -5,7 +5,7 @@ const matchList = document.querySelector('#match-list');
 // flesh up the UI with autocomplete matches 
 const fleshUp = (matches) => {
     if ( matches.length > 0 ) {
-        const html = '<h6 class="m-1">Top 10 matches</h6>' + matches.slice(1,10).map( match => 
+        const html = '<h6 class="m-1">Top 10 matches</h6>' + matches.slice(0,10).map( match => 
                 `
                     <div class='card card-body mb-2'>
                         <p class='result text-primary my-auto' style='font-family:Monaco;cursor: pointer;'>${match[0]}</p>
